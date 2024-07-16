@@ -8,11 +8,13 @@ export function Flow() {
   const [parsed, setParsed] = useState(`// Please press obfuscate button.`);
 
   const parse = async () => {
+    alert("Obfuscated!")
     setParsed(await obfuscate(pure));
   };
 
-  const injecter = () => {
-    setParsed(inject(parsed));
+  const injecter = async () => {
+    alert("Injected!")
+    setParsed(await inject(parsed));
   };
 
   return (
