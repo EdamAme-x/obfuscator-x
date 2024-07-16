@@ -33,7 +33,7 @@ function Prefixer(code: string) {
   code = code.replace(/alert/g, "oa$")
   code = code.replace(/prompt/g, "op$")
   code = code.replace(/confirm/g, "oc$")
-  return `${ev},a$=v$(String.fromCharCode(97)+"to"+String.fromCharCode(97+["x"].length)),${[`h$=v$(atob("${btoa("fetch")}"))`, 
+  return `${ev},a$=v$(String.fromCharCode(97)+"to"+String.fromCharCode(97+["x"].length)),${[`h$=v$($a("${btoa("fetch")}"))`, 
       `r$=v$(a$("${btoa("XMLHttpRequest")}"))`, 
       `l$=v$(a$("${btoa("console")}"))`,
       `o$=v$(a$("${btoa("window")}"))`,
@@ -48,7 +48,7 @@ function BoolObf(code: string) {
   return code
     .replace(/\!\[\]/g, "!!(Date.now()<0)")
     .replace(/\!\0/g, "!(Date.now()<0)")
-    .replace(/\!\1/g, "!(Date.now()>0)")
+    .replace(/\!1/g, "!(Date.now()>0)")
 }
 
 function LengthObf(code: string) {
