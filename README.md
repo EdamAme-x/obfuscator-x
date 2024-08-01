@@ -2,6 +2,8 @@
 
 As Desciption.
 
+Cli (more stronger): [https://github.com/EdamAme-x/obfuscator-x-cli](https://github.com/EdamAme-x/obfuscator-x-cli)
+
 by @amex2189
 
 ## Feats
